@@ -1,0 +1,133 @@
+@import "elements.less";
+@import "ui-grid.less";
+/*@import "vertical-align.less";*/
+
+/* variables */
+
+@yk_green: #4EBA6F;
+@yk_yellow: #F0C419;
+@yk_red: #F15A5A;
+@yk_blue: #2D95BF;
+@yk_purple: #955BA5;
+@yk_gray: #95A5A6;
+@yk_light_gray: #ECF0F1;
+@yk_text: #333;
+
+/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.buttons-right {
+    text-align: right;
+
+    .btn {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+.page-heading {
+    text-align: center;
+}
+
+.table-container {
+    margin-top: 30px;
+}
+
+.btn {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+    &.btn-blue { background: @yk_blue; }
+    &.btn-green { background: @yk_green; }
+    &.btn-yellow { background: @yk_yellow; }
+    &.btn-purple { background: @yk_purple; }
+    &.btn-red { background: @yk_red; }
+
+    &:hover {
+        color: white;
+        &.btn-blue { background: lighten(@yk_blue,5%); }
+        &.btn-green { background: lighten(@yk_green,5%); }
+        &.btn-yellow { background: lighten(@yk_yellow,5%); }
+        &.btn-purple { background: lighten(@yk_purple,5%); }
+        &.btn-red { background: lighten(@yk_red,5%); }
+    }
+}
+
+
+/* form */
+
+input:focus {
+    outline: 0;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.form-control {
+    &.ng-dirty {
+        border: 1px solid @yk_blue;
+    }
+
+    &.ng-invalid {
+        border: 1px solid @yk_red;
+        background: lighten(@yk_red,20%);
+        color: white;
+    }
+}
+
+/* header */
+
+.navbar {
+    background: @yk_light_gray;
+
+    a {
+        color: @yk_text;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: @yk_text;
+    }
+
+    .nav > li > a {
+        &:hover, &:focus {
+            background: @yk_yellow;
+        }
+    }
+}
+
+/* login page */ 
+
+.login {
+    margin-top: 50px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* admin home */
+
+.admin-home {
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+}

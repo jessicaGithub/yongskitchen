@@ -1,0 +1,21 @@
+<div class="container admin-home">
+    <div class="row">
+        <div class="col-xs-3">
+            <select ng-model="selectedDuration" ng-options="x for x in durationOptions"></select>
+        </div>
+        
+        <div class="col-xs-6 page-heading">
+            <h2>Today's Summary Report</h2>
+        </div>
+        
+        <div class="col-xs-3 buttons-right">
+            <button type="button" class="btn btn-yellow" ng-click="emailSummary()">email summary</button>
+        </div>
+    </div>
+    <div class="row table-container">
+        <div class="col-xs-12">
+            <div ui-grid="{ data: summaryTodayData }" class="grid-table"></div>
+        </div>
+    </div>
+  </div>
+</div>

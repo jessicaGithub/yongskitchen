@@ -1,0 +1,22 @@
+<div class="container admin-home">
+    <div class="row">
+        <div class="col-xs-3 today-date">
+            <p>16 June 2016</p>
+        </div>
+        
+        <div class="col-xs-6 page-heading">
+            <h2>Today's Menu</h2>
+        </div>
+        
+        <div class="col-xs-3 buttons-right">
+            <button type="button" class="btn btn-green" ng-click="addData()">Add More</button>
+            <button type="submit" class="btn btn-blue" ng-click="goToViewMode()">Finished</button>
+        </div>
+    </div>
+    <div class="row table-container">
+        <div class="col-xs-12">
+            <div ui-grid="{ data: homeAdminData1 }" ui-grid-edit ui-grid-row-edit ui-grid-cellNav class="grid-table"></div>
+        </div>
+    </div>
+  </div>
+</div>
