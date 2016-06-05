@@ -1,0 +1,71 @@
+<div class="container staff-home">
+    <div class="row">
+        <div class="col-xs-4">
+            <button type="button" class="btn btn-red" ng-click="cancelOrder()">Cancel order</button>
+        </div>
+        <div class="col-xs-8 text-align-center">
+            <h2>This is an order for [customer name here]</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 client-searchbar">
+            <h3>Please select the menu items below:</h3>
+        </div>
+    </div>
+    <div class="row menu-tab-container">
+        <div class="col-xs-12 text-align-center">
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist" id="menu-tab">
+                <li role="presentation" class="active"><a href="#breakfast" aria-controls="home" role="tab" data-toggle="tab">Breakfast</a></li>
+                <li role="presentation"><a href="#lunch" aria-controls="profile" role="tab" data-toggle="tab">Lunch</a></li>
+                <li role="presentation"><a href="#drinks" aria-controls="messages" role="tab" data-toggle="tab">Drinks</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="breakfast">
+                    <div ng-repeat="breakfastItem in breakfastList" id="{{breakfastItem.id}}" class="btn btn-menu menuItemButton">
+                        <p>{{breakfastItem.name}}</p>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="lunch">
+                    <div ng-repeat="lunchItem in lunchList" id="{{lunchItem.id}}" class="btn btn-menu menuItemButton">
+                        <p>{{lunchItem.name}}</p>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="drinks">
+                     <div ng-repeat="drinksItem in drinksList" id="{{drinksItem.id}}" class="btn btn-menu menuItemButton">
+                        <p>{{drinksItem.name}}</p>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    <div class="row order-list-container">
+        <div class="col-xs-12 order-list">
+            <div ui-grid="{ data: orderedMenuList }" class="grid-table"></div>
+        </div>
+    </div>
+    <div class="row order-summary-container">
+        <div class="col-xs-6 order-summary">
+            Total to pay: [total amount to pay here]
+        </div>
+        <div class="col-xs-6 order-summary">
+            Amount paid: [total amount customer paid here]
+        </div>
+    </div>
+    <div class="row order-payment-container">
+        <div class="col-xs-4 order-payment">
+            <button type="button" class="btn btn-blue" ng-click="payByCash()">Pay by cash</button>
+        </div>
+        <div class="col-xs-4 order-payment">
+            <button type="button" class="btn btn-purple" ng-click="payByEftpost()">Pay by Eftpost</button>
+        </div>
+        <div class="col-xs-4 order-payment">
+            <button type="button" class="btn btn-yellow" ng-click="payByTab()">Put on Tab</button>
+        </div>
+    </div>
+  </div>
+</div>

@@ -34,7 +34,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     // .when("/manage-building", {templateUrl: "partials/manage-building.html", controller: "AdminCtrl"})
     // .when("/manage-menu-item", {templateUrl: "partials/manage-menu-item.html", controller: "AdminCtrl"})
     // // pages for staff    
-    // .when("/staff-home", {templateUrl: "partials/staff-home.html", controller: "staffCtrl"})
+    .when("/staff-home", {templateUrl: "partials/staff-home.html", controller: "StaffCtrl"})
+    .when("/staff/add-order", {templateUrl: "partials/staff-add-order.html", controller: "StaffCtrl"})
     // // else 404
     // .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
@@ -44,6 +45,58 @@ app.config(['$routeProvider', function ($routeProvider) {
  */
 app.controller('StaffCtrl', function ($scope, $location, $http) {
   console.log("Staff Controller reporting for duty.");
+
+  $scope.buildings = ["Building A", "Building B", "Building C", "Building D", "Building E"];
+  $scope.selectedBuilding = "Building A";
+
+  $scope.clientList = [{
+    "id": 1,
+    "first_name": "Joe",
+    "last_name": "Horton",
+    "level": 20,
+    "mobile_number": "0437292987",
+    "action": "update details | add order "
+  },
+  {
+    "id": 2,
+    "first_name": "Maggie",
+    "last_name": "Smith",
+    "level": 2,
+    "mobile_number": "0422991717",
+    "action": "update details | add order "
+  },
+  {
+    "id": 3,
+    "first_name": "Troll",
+    "last_name": "Man",
+    "level": 5,
+    "mobile_number": "0434577575",
+    "action": "update details | add order "
+  }];
+
+  // staff order page tab fix
+  $('.nav-tabs a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+
+  $scope.breakfastList = [{
+    "id": 1,
+    "name": "muffin",
+    "price": 4,
+    "quantity_left": 5
+  },
+  {
+    "id": 2,
+    "name": "brownies",
+    "price": 4,
+    "quantity_left": 10
+  },{
+    "id": 3,
+    "name": "pie",
+    "price": 5,
+    "quantity_left": 5
+  }];
 });
 
 /**
@@ -111,8 +164,8 @@ app.controller('AdminCtrl', function ($scope, $location, $http) {
   }];
 
   $scope.addData = function() {
-    var n = $scope.homeAdminData.length + 1;
-    $scope.homeAdminData.push({
+    var n = $scope.homeAdminData1.length + 1;
+    $scope.homeAdminData1.push({
       "id": n,
       "menu_item": "",
       "quantity_made": 0
@@ -129,16 +182,25 @@ app.controller('AdminCtrl', function ($scope, $location, $http) {
 
   // SUMMARY PAGES
   $scope.durationOptions = ["Today", "This Week", "This Month", "This Year", "This Financial Year"];
+  $scope.selectedDuration = "Today";
 
   $scope.summaryTodayData = [{
-    "id": 1,
-    "menu_item": "muffin",
-    "quantity_made": 20
+    "order_id": 1,
+    "client_id": 2,
+    "staff_id": 2232,
+    "menu_item": "20, 40",
+    "paid_by": "cash",
+    "purchase_date": "16 May 2016",
+    "total_paid": "$40"
   },
   {
-    "id": 2,
-    "menu_item": "donut",
-    "quantity_made": 10
+    "order_id": 2,
+    "client_id": 3,
+    "staff_id": 232,
+    "menu_item": "2,6,7",
+    "paid_by": "eftpos",
+    "purchase_date": "16 May 2016",
+    "total_paid": "$70"
   }];
 
 });
@@ -188,7 +250,7 @@ app.controller('LoginCtrl', function ($scope, $location, $http) {
         $location.path('/staff-home')
       }
     }else {
-      console.log("failed");
+      alert("login failed. check your credentials");
     }
   }
 
