@@ -27,13 +27,13 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/admin-home/edit-today", {templateUrl: "partials/admin-home-edit.html", controller: "AdminCtrl"})
     .when("/admin-home/view-today", {templateUrl: "partials/admin-home-view.html", controller: "AdminCtrl"})
     .when("/admin/summary", {templateUrl: "partials/admin-summary.html", controller: "AdminCtrl"})
-    // .when("/invoice-generator", {templateUrl: "partials/invoice-generator.html", controller: "AdminCtrl"})
-    // .when("/manage-staff", {templateUrl: "partials/manage-staff.html", controller: "AdminCtrl"})
-    // .when("/manage-order", {templateUrl: "partials/manage-order.html", controller: "AdminCtrl"})
-    // .when("/manage-client", {templateUrl: "partials/manage-client.html", controller: "AdminCtrl"})
-    // .when("/manage-building", {templateUrl: "partials/manage-building.html", controller: "AdminCtrl"})
-    // .when("/manage-menu-item", {templateUrl: "partials/manage-menu-item.html", controller: "AdminCtrl"})
-    // // pages for staff    
+    // .when("/admin/invoice-generator", {templateUrl: "partials/admin-invoice-generator.html", controller: "AdminCtrl"})
+    .when("/admin/manage-staff", {templateUrl: "partials/admin-manage-staff.html", controller: "AdminCtrl"})
+    .when("/admin/manage-order", {templateUrl: "partials/admin-manage-order.html", controller: "AdminCtrl"})
+    .when("/admin/manage-client", {templateUrl: "partials/admin-manage-client.html", controller: "AdminCtrl"})
+    .when("/admin/manage-building", {templateUrl: "partials/admin-manage-building.html", controller: "AdminCtrl"})
+    .when("/admin/manage-menu-item", {templateUrl: "partials/admin-manage-menu-item.html", controller: "AdminCtrl"})
+    // pages for staff    
     .when("/staff-home", {templateUrl: "partials/staff-home.html", controller: "StaffCtrl"})
     .when("/staff/add-order", {templateUrl: "partials/staff-add-order.html", controller: "StaffCtrl"})
     // // else 404
@@ -106,69 +106,62 @@ app.controller('AdminCtrl', function ($scope, $location, $http) {
   console.log("Admin Controller reporting for duty.");
 
   // HOME ADMIN PAGES
-  $scope.homeAdminData1 = [{
-    "id": 1,
-    "menu_item": "muffin",
-    "quantity_made": 20
-  },
-  {
-    "id": 2,
-    "menu_item": "donut",
-    "quantity_made": 10
+
+  $http.get('../Dummy_Data/today_menu.csv').success(function(data) {
+     $scope.homeAdminData = csvJSON(data);
+
+     $scope.homeAdminData1gridOptions.data = $scope.homeAdminData;
+     $scope.homeAdminData2gridOptions.data = $scope.homeAdminData;
+  });
+
+  // data for admin home edit page
+  $scope.homeAdminData1Columns = [{ 
+    field: 'MenuItem_Name', 
+    displayName: "Menu Item" 
+  }, 
+  { 
+    field: 'MenuItem_QuantityMade', 
+    displayName: "Quantity Made" 
+  }];
+  $scope.homeAdminData1gridOptions = {
+    enableSorting: true,
+    columnDefs: $scope.homeAdminData1Columns,
+    onRegisterApi: function(gridApi) {
+      $scope.gridApi = gridApi;
+    }
+  };
+
+  // data for admin home view page
+  $scope.homeAdminData2Columns = [{ 
+    field: 'MenuItem_Name', 
+    displayName: "Menu Item" 
+  }, 
+  { 
+    field: 'MenuItem_QuantityMade', 
+    displayName: "Quantity Made" 
+  }, 
+  { 
+    field: 'MenuItem_QuantityLeft', 
+    displayName: "Quantity Left" 
   }];
 
-  $scope.homeAdminData2 = [{
-    "id": 1,
-    "menu_item": "muffin",
-    "quantity_left": 20,
-    "paid_cash": 2,
-    "paid_eftpost": 3,
-    "put_on_tab": 4,
-    "income_earned": "$10"
-  },
-  {
-    "id": 2,
-    "menu_item": "donut",
-    "quantity_left": 10,
-    "paid_cash": 2,
-    "paid_eftpost": 3,
-    "put_on_tab": 4,
-    "income_earned": "$10"
-  },
-  {
-    "id": 3,
-    "menu_item": "sandwich",
-    "quantity_left": 15,
-    "paid_cash": 2,
-    "paid_eftpost": 3,
-    "put_on_tab": 4,
-    "income_earned": "$10"
-  },
-  {
-    "id": 4,
-    "menu_item": "chicken pie",
-    "quantity_left": 10,
-    "paid_cash": 2,
-    "paid_eftpost": 3,
-    "put_on_tab": 4,
-    "income_earned": "$10"
-  },
-  {
-    "id": 5,
-    "menu_item": "mushroom pasta",
-    "quantity_left": 10,
-    "paid_cash": 2,
-    "paid_eftpost": 3,
-    "put_on_tab": 4,
-    "income_earned": "$10"
-  }];
+  $scope.homeAdminData2gridOptions = {
+    enableSorting: true,
+    columnDefs: $scope.homeAdminData2Columns,
+    onRegisterApi: function(gridApi) {
+      $scope.gridApi = gridApi;
+    }
+  };
 
   $scope.addData = function() {
-    var n = $scope.homeAdminData1.length + 1;
-    $scope.homeAdminData1.push({
-      "id": n,
-      "menu_item": "",
-      "quantity_made": 0
+    alert("added a blank editable row on the bottom of the list");
+    var n = $scope.homeAdminData.length + 1;
+    $scope.homeAdminData.push({
+      Today_Date: "15/07/16", 
+      MenuItem_ID: "", 
+      MenuItem_Name: "", 
+      MenuItem_Price: "", 
+      MenuItem_QuantityMade: ""
     });
   };
 
@@ -184,25 +177,45 @@ app.controller('AdminCtrl', function ($scope, $location, $http) {
   $scope.durationOptions = ["Today", "This Week", "This Month", "This Year", "This Financial Year"];
   $scope.selectedDuration = "Today";
 
-  $scope.summaryTodayData = [{
-    "order_id": 1,
-    "client_id": 2,
-    "staff_id": 2232,
-    "menu_item": "20, 40",
-    "paid_by": "cash",
-    "purchase_date": "16 May 2016",
-    "total_paid": "$40"
-  },
-  {
-    "order_id": 2,
-    "client_id": 3,
-    "staff_id": 232,
-    "menu_item": "2,6,7",
-    "paid_by": "eftpos",
-    "purchase_date": "16 May 2016",
-    "total_paid": "$70"
-  }];
+  $http.get('../Dummy_Data/orders.csv').success(function(data) {
+     $scope.summaryTodayData = csvJSON(data);
 
+     $scope.summaryTodayGridOptions.data = $scope.summaryTodayData;
+  });
+
+  // data for admin home edit page
+  $scope.summaryTodayColumns = [{ 
+    field: 'Order_ID', 
+    // displayName: "Menu Item" 
+  }, 
+  { 
+    field: 'Client_ID', 
+    // displayName: "Quantity Made" 
+  }, 
+  { 
+    field: 'Staff_ID', 
+    // displayName: "Quantity Made" 
+  }, 
+  { 
+    field: 'Menu_Ordered', 
+    // displayName: "Quantity Made" 
+  }, 
+  { 
+    field: 'Total_Due', 
+    // displayName: "Quantity Made" 
+  }, 
+  { 
+    field: 'Payment_Method', 
+    // displayName: "Quantity Made" 
+  }];
+  
+  $scope.summaryTodayGridOptions = {
+    enableSorting: true,
+    columnDefs: $scope.summaryTodayColumns,
+    onRegisterApi: function(gridApi) {
+      $scope.gridApi = gridApi;
+    }
+  };
 });
 
 /* Config login using local storage */
@@ -210,40 +223,23 @@ app.controller('AdminCtrl', function ($scope, $location, $http) {
 app.controller('LoginCtrl', function ($scope, $location, $http) {
   console.log("Login Controller reporting for duty.");
 
-  $scope.userDB = [{
-    "id": 1,
-    "first_name": "jooyong",
-    "last_name": "jeong",
-    "username": "jooyongjeong",
-    "identification_number": 123,
-    "mobile_number": "0412345678",
-    "staff_type": "admin",
-    "password": "test"
-  },
-  {
-    "id": 2,
-    "first_name": "jessica",
-    "last_name": "jeong",
-    "username": "jessicajeong",
-    "identification_number": 123,
-    "mobile_number": "0412345678",
-    "staff_type": "employee",
-    "password": "test"
-  }];
+  $http.get('../Dummy_Data/staffs.csv').success(function(data) {
+     $scope.userDB = csvJSON(data);
+  });
 
   $scope.testLogin = function(){
     var success = false;
     var staff_type = "";
 
     angular.forEach($scope.userDB, function(value, key) {
-      if($scope.username == value.username && $scope.password == value.password){
+      if($scope.username == value.Staff_Username && $scope.password == value.Staff_Password){
         success = true;
-        staff_type = value.staff_type;
+        staff_type = value.Staff_Type;
       }
     });
 
     if(success){
-      if (staff_type == "admin") {
+      if (staff_type == "Admin") {
         $location.path('/admin-home/edit-today')
       }
       else {
