@@ -987,12 +987,18 @@ p {
 .table-container {
   margin-top: 30px;
 }
+.text-align-right {
+  text-align: right;
+}
 .btn {
   display: block;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 700;
   color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .btn.btn-blue {
   background: #2d95bf;
@@ -1047,6 +1053,32 @@ input:focus {
 .dropdown {
   cursor: pointer;
 }
+select {
+  padding: 5px 10px;
+  margin: 0;
+  background: #fff;
+  color: #333;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url(../img/arrow_down.png) no-repeat;
+  background-position: center right 5px;
+  background-size: 25px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+input {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
 .form-control.ng-dirty {
   border: 1px solid #2d95bf;
 }
@@ -1078,4 +1110,15 @@ input:focus {
   margin-bottom: 30px;
 }
 /* admin home */
+/* staff home */
+.staff-home .client-searchbar,
+.staff-home .client-add-button-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.staff-home .client-searchbar .btn,
+.staff-home .client-add-button-container .btn {
+  display: block;
+  width: 100%;
+}
 /* Responsive Styles */

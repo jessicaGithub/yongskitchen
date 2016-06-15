@@ -2,58 +2,55 @@
 /**
  * Controls the staff pages
  */
-app.controller('StaffCtrl', function ($scope, $location, $http) {
-  console.log("Staff Controller reporting for duty.");
+app.controller('StaffHomeCtrl', function ($scope, $location, $http) {
+  console.log("Staff Home Controller reporting for duty.");
 
-  $scope.buildings = ["Building A", "Building B", "Building C", "Building D", "Building E"];
-  $scope.selectedBuilding = "Building A";
+  $scope.buildings = [];
 
-  $scope.clientList = [{
-    "id": 1,
-    "first_name": "Joe",
-    "last_name": "Horton",
-    "level": 20,
-    "mobile_number": "0437292987",
-    "action": "update details | add order "
-  },
-  {
-    "id": 2,
-    "first_name": "Maggie",
-    "last_name": "Smith",
-    "level": 2,
-    "mobile_number": "0422991717",
-    "action": "update details | add order "
-  },
-  {
-    "id": 3,
-    "first_name": "Troll",
-    "last_name": "Man",
-    "level": 5,
-    "mobile_number": "0434577575",
-    "action": "update details | add order "
-  }];
+  $http.get('../Dummy_Data/buildings.csv').success(function(data) {
+     $scope.BuildingData = csvJSON(data);
 
-  // staff order page tab fix
-  $('.nav-tabs a').click(function (e) {
-    e.preventDefault();
-    $(this).tab('show');
+    angular.forEach($scope.BuildingData, function(value, key) {
+        // console.log(value.Building_Name);
+        $scope.buildings.push(value.Building_Name + " at " + value.Building_Address);
+    });
+
+     $scope.selectedBuilding = $scope.buildings[0];
+
   });
 
-  $scope.breakfastList = [{
-    "id": 1,
-    "name": "muffin",
-    "price": 4,
-    "quantity_left": 5
-  },
-  {
-    "id": 2,
-    "name": "brownies",
-    "price": 4,
-    "quantity_left": 10
-  },{
-    "id": 3,
-    "name": "pie",
-    "price": 5,
-    "quantity_left": 5
+  $http.get('../Dummy_Data/clients.csv').success(function(data) {
+     $scope.ClientData = csvJSON(data);
+
+     $scope.ClientGridOptions.data = $scope.ClientData;
+  });
+
+  $scope.ClientColumns = [{ 
+    field: 'Client_ID', 
+    displayName: "ID"
+  }, 
+  { 
+    field: 'Client_FirstName', 
+    displayName: "First Name"
+  }, 
+  { 
+    field: 'Client_LastName', 
+    displayName: "Last Name"
+  }, 
+  { 
+    field: 'Client_BuildingLevel', 
+    displayName: "Level"
+  }, 
+  { 
+    field: 'Client_Mobile', 
+    displayName: "Mobile"
   }];
+  
+  $scope.ClientGridOptions = {
+    enableSorting: true,
+    columnDefs: $scope.ClientColumns,
+    onRegisterApi: function(gridApi) {
+      $scope.gridApi = gridApi;
+    }
+  };
 });

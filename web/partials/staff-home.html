@@ -10,7 +10,7 @@
     </div>
     <div class="row client-search-container">
         <div class="col-xs-8 client-searchbar">
-            <input type="text" ng-model="clientKeyword"></input>
+            <input type="text" ng-model="clientKeyword" placeholder="Enter keyword to find client" ></input>
         </div>
          <div class="col-xs-4 client-add-button-container">
             <button type="button" class="btn btn-green" ng-click="addNewClient()">Add New Client</button>
@@ -18,7 +18,7 @@
     </div>
     <div class="row client-result-container">
         <div class="col-xs-12 client-result">
-            <div ui-grid="{ data: clientList }" class="grid-table"></div>
+            <div ui-grid="ClientGridOptions" class="grid-table"></div>
         </div>
     </div>
   </div>

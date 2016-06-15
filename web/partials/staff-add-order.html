@@ -3,7 +3,7 @@
         <div class="col-xs-4">
             <button type="button" class="btn btn-red" ng-click="cancelOrder()">Cancel order</button>
         </div>
-        <div class="col-xs-8 text-align-center">
+        <div class="col-xs-8 text-align-right">
             <h2>This is an order for [customer name here]</h2>
         </div>
     </div>
@@ -26,17 +26,17 @@
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="breakfast">
                     <div ng-repeat="breakfastItem in breakfastList" id="{{breakfastItem.id}}" class="btn btn-menu menuItemButton">
-                        <p>{{breakfastItem.name}}</p>
+                        <p>{{breakfastItem.MenuItem_Name}}</p>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="lunch">
                     <div ng-repeat="lunchItem in lunchList" id="{{lunchItem.id}}" class="btn btn-menu menuItemButton">
-                        <p>{{lunchItem.name}}</p>
+                        <p>{{lunchItem.MenuItem_Name}}</p>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="drinks">
                      <div ng-repeat="drinksItem in drinksList" id="{{drinksItem.id}}" class="btn btn-menu menuItemButton">
-                        <p>{{drinksItem.name}}</p>
+                        <p>{{drinksItem.MenuItem_Name}}</p>
                     </div>
                 </div>
               </div>

@@ -18,8 +18,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/admin/manage-building", {templateUrl: "partials/admin-manage-building.html", controller: "AdminManageBuildingCtrl"})
     .when("/admin/manage-menu-item", {templateUrl: "partials/admin-manage-menu-item.html", controller: "AdminManageMenuItemCtrl"})
     // pages for staff    
-    .when("/staff-home", {templateUrl: "partials/staff-home.html", controller: "StaffCtrl"})
-    .when("/staff/add-order", {templateUrl: "partials/staff-add-order.html", controller: "StaffCtrl"})
+    .when("/staff-home", {templateUrl: "partials/staff-home.html", controller: "StaffHomeCtrl"})
+    .when("/staff/add-order", {templateUrl: "partials/staff-add-order.html", controller: "StaffAddOrderCtrl"})
     // // else 404
     // .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
