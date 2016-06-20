@@ -33,6 +33,14 @@ app.controller('AdminSummaryCtrl', function ($scope, $location, $http) {
     // displayName: "Quantity Made" 
   }, 
   { 
+    field: 'Amount_Paid', 
+    // displayName: "Quantity Made" 
+  }, 
+  { 
+    field: 'Tab_Balance', 
+    // displayName: "Quantity Made" 
+  }, 
+  { 
     field: 'Payment_Method', 
     // displayName: "Quantity Made" 
   }];
