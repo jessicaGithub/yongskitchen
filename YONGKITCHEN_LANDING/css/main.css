@@ -1,0 +1,439 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    background: #FDEEDA;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'adelle_bold';
+    src: url('../font/adellebasic_bold-webfont.woff2') format('woff2'),
+         url('../font/adellebasic_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+    font-family: 'adelle_bold_italic';
+    src: url('../font/adellebasic_bolditalic-webfont.woff2') format('woff2'),
+         url('../font/adellebasic_bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+    font-family: 'pill_bold';
+    src: url('../font/pill_gothic_300mg_bold-webfont.woff2') format('woff2'),
+         url('../font/pill_gothic_300mg_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+    font-family: 'pill_light';
+    src: url('../font/pill_gothic_300mg_light-webfont.woff2') format('woff2'),
+         url('../font/pill_gothic_300mg_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+    font-family: 'pill_regular';
+    src: url('../font/pill_gothic_300mg_regular-webfont.woff2') format('woff2'),
+         url('../font/pill_gothic_300mg_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+    font-family: 'pill_semibd';
+    src: url('../font/pill_gothic_300mg_semibd-webfont.woff2') format('woff2'),
+         url('../font/pill_gothic_300mg_semibd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+    font-family: 'pill_thin';
+    src: url('pill_gothic_300mg_thin-webfont.woff2') format('woff2'),
+         url('pill_gothic_300mg_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: transparent;
+}
+
+h1 {
+    font-family: "adelle_bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 56px;
+    color: #FEC565;
+    text-shadow: 0px 3px 1px #001502;
+}
+
+h3 {
+    font-family: "adelle_bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #213b5a;
+    margin: 10px auto 30px;
+}
+
+h4 {
+    font-family: "pill_regular", sans-serif;
+    color: #FDEEDA;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: "pill_regular", sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#213b5a+49,0a2849+100 */
+    background: #213b5a); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #213b5a 49%, #0a2849 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #213b5a 49%,#0a2849 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #213b5a 49%,#0a2849 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#213b5a', endColorstr='#0a2849',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: relative;
+}
+
+.tag {
+    background: url("../img/tag_banner.png");
+    background-position: center center;
+    width: 305px;
+    height: 73px;
+    display: block;
+    margin: 20px auto 0;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "pill_regular", sans-serif;
+    color: #FEC565;
+}
+
+.border_left, .border_right {
+    background: url("../img/border.png");
+    display: block;
+    width: 50px;
+    height: 51px;
+    background-position: top left;
+    float: left;
+    margin: 20px;
+}
+
+.border_right {
+    float: right;
+    background-position: top right;
+}
+
+.header_pattern {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: #213b5a url("../img/clean-gray-paper.png");
+    background-repeat: repeat;
+    background-size: 315px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
+    opacity: 0.2;
+}
+
+.header_content {
+    position: relative;
+    z-index: 2;
+}
+
+.heading_container {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto 50px;
+    text-align: center;
+}
+
+.content_area {
+    background-image: url("../img/arrow_bg.png");
+    background-repeat: repeat-x;
+    background-position: top left;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.truck_animation {
+    margin: 50px auto;
+}
+
+.truck_animation #truck {
+    width: 150px;
+    height: auto;
+}
+
+.truck_animation #fume {
+    width: 40px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.truck_animation #road_1,
+.truck_animation #road_2,
+.truck_animation #road_3
+ {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.new_section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.profile_photo {
+    max-width: 150px;
+    margin: 50px auto;
+}
+
+.profile_photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact-form{ 
+    margin-top:50px;
+}
+.contact-form .textarea{ 
+    min-height:220px; resize:none; font-family: "pill_regular", sans-serif; font-size: 16px;
+}
+.form-control{ 
+    box-shadow:none; border-color:#eee; height:49px; font-family: "pill_regular", sans-serif; font-size: 16px;
+}
+.form-control:focus{ 
+    box-shadow:none; border-color:#00b09c;
+}
+.form-control-feedback{ 
+    line-height:50px;
+}
+.main-btn{ 
+    background:#213b5a; border-color:#0a2849; color:#fff; padding: 15px; text-transform: uppercase; font-family: "pill_regular", sans-serif; font-size: 16px;
+}
+.main-btn:hover, .main-btn:focus{ 
+    background:#0a2849;color:#fff;
+}
+.form-control-feedback {
+    line-height: 50px;
+    top: 0px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+    .border_left, .border_right {
+        width: 20px;
+        height: 20px;
+        background-size: 200% auto;
+    }
+    .heading_container {
+        max-width: 300px;
+    }
+    .heading_container h1 {
+        font-size: 34px;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
