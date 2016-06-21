@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 	$("#heading_main").arctext({
 		radius: 600,
-		fitText	: false 
+		fitText	: true 
 	})
 
 	$('#contact-form').bootstrapValidator({

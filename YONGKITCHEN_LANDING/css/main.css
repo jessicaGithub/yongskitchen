@@ -270,7 +270,7 @@ p {
 }
 
 .footer {
-    padding-top: 80px;
+    padding-top: 30px;
     text-align: center;
     padding-bottom: 30px;
 }
@@ -305,7 +305,7 @@ p {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
     .border_left, .border_right {
         width: 20px;
         height: 20px;
@@ -313,9 +313,25 @@ p {
     }
     .heading_container {
         max-width: 300px;
+        clear: both;
+        margin-bottom: 20px;
     }
     .heading_container h1 {
         font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .border_left, .border_right {
+        margin: 15px 0;
+    }
+    .tag {
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 185px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 38px;
     }
 }
 
