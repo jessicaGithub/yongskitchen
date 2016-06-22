@@ -11,6 +11,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+        <meta property="og:url" content="http://www.yongskitchen.com.au" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Yong's Kitchen Food Trolley" />
+        <meta property="og:description" content="We will bring healthy, freshly cooked meals straight to your desk, with a wide variation of menu to choose from every day." />
+        <meta property="og:image" content="./img/fb_image.jpg" />
+
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">        
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>

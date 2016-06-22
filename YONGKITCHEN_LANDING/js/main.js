@@ -2,17 +2,33 @@ $(document).ready(function(){
 
 	function truckAnimation(){
 		var truckAnimTl = new TimelineMax({yoyo: true, repeat: -1});
-		var fumeAnimTl = new TimelineMax({yoyo: false, repeat: -1});
+        var fumeAnimTl = new TimelineMax({yoyo: false, repeat: -1});
+        var step1Tl = new TimelineMax({yoyo: true, repeat: -1});
+        var step2Tl = new TimelineMax({yoyo: true, repeat: -1});
+		var step4Tl = new TimelineMax({yoyo: true, repeat: -1, repeatDelay: 1});
 
 		truckAnimTl
-			.to(["#truck"],0.2,{ease: RoughEase.ease.config({ template: Power2.easeNone, strength: 0.5, points: 20, taper: "none", randomize: true, clamp: false}), scaleY:1.005, x: 1, transformOrigin: "center bottom" })
+			.to(["#truck","#truck_2"],0.2,{ease: RoughEase.ease.config({ template: Power2.easeNone, strength: 0.5, points: 20, taper: "none", randomize: true, clamp: false}), scaleY:1.005, x: 1, transformOrigin: "center bottom" })
 		;
 
 		fumeAnimTl
-			.to(["#fume"],0,{alpha: 0, scale: 0, transformOrigin: "left center"})
-			.to(["#fume"],0.5,{ease: Power2.easeOut, alpha: 1, scale: 1, transformOrigin: "left center"})
-			.to(["#fume"],0.5,{alpha: 0, scale: 1.3, transformOrigin: "left center"},"+=0.3")
+			.to(["#fume","#fume_2"],0,{alpha: 0, scale: 0, transformOrigin: "left center"})
+			.to(["#fume","#fume_2"],0.5,{ease: Power2.easeOut, alpha: 1, scale: 1, transformOrigin: "left center"})
+			.to(["#fume","#fume_2"],0.5,{alpha: 0, scale: 1.3, transformOrigin: "left center"},"+=0.3")
 		;
+
+        step1Tl
+            .to(["#step_1_hand"],1,{rotation:15,transformOrigin:"63px 98px", ease: Power2.easeOut})
+        ;
+
+        step2Tl
+            .to(["#step_2_hand"],1,{rotation:-5,transformOrigin:"81px 102px", ease: Power2.easeOut})
+        ;
+
+        step4Tl
+            .to(["#step_4_top_body"],1,{rotation:5,transformOrigin:"34px 124px"})
+            .fromTo(["#step_4_bubble"],1,{alpha: 0, scale: 0, transformOrigin: "216px 75px"},{alpha: 1, scale: 1, ease: Power2.easeOut})
+        ;
 	}
 
 	truckAnimation();

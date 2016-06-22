@@ -1,4 +1,12 @@
-
+        <div class="row header" id="footer">
+            <div class="header_pattern"></div>
+            <div class="col-md-6">
+                <p class="text-left">Designed and built with <i class="glyphicon glyphicon-heart"></i> in Melbourne, AUS</p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-right">Some imageries are sourced from the awesome image site, <a href="http://www.freepik.com/" target="_blank">Freepik</a></p>
+            </div>
+        </footer>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery.form.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -18,5 +26,8 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
          -->
+
+         <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5769cc565f6a547a"></script>
     </body>
 </html>
