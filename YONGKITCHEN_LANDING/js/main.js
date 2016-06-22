@@ -3,6 +3,7 @@ $(document).ready(function(){
 	function truckAnimation(){
 		var truckAnimTl = new TimelineMax({yoyo: true, repeat: -1});
         var fumeAnimTl = new TimelineMax({yoyo: false, repeat: -1});
+        var burgerAnimTl = new TimelineMax({yoyo: false, repeat: -1});
         var step1Tl = new TimelineMax({yoyo: true, repeat: -1});
         var step2Tl = new TimelineMax({yoyo: true, repeat: -1});
 		var step4Tl = new TimelineMax({yoyo: true, repeat: -1, repeatDelay: 1});
@@ -16,6 +17,11 @@ $(document).ready(function(){
 			.to(["#fume","#fume_2"],0.5,{ease: Power2.easeOut, alpha: 1, scale: 1, transformOrigin: "left center"})
 			.to(["#fume","#fume_2"],0.5,{alpha: 0, scale: 1.3, transformOrigin: "left center"},"+=0.3")
 		;
+
+        // burgerAnimTl
+        //     .to(["#burger_top"],0.8,{ease: Power0.easeOut, y: -80, transformOrigin: "center center" })
+        //     .to(["#burger_mid"],0.8,{ease: Power0.easeOut, y: -80, transformOrigin: "center center" })
+        // ;
 
         step1Tl
             .to(["#step_1_hand"],1,{rotation:15,transformOrigin:"63px 98px", ease: Power2.easeOut})

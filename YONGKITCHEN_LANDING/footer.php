@@ -1,12 +1,14 @@
-        <div class="row header" id="footer">
-            <div class="header_pattern"></div>
-            <div class="col-md-6">
-                <p class="text-left">Designed and built with <i class="glyphicon glyphicon-heart"></i> in Melbourne, AUS</p>
+        <div class="container-fluid">
+            <div class="row header" id="footer">
+                <div class="header_pattern"></div>
+                <div class="col-md-6">
+                    <p class="text-left">Designed and built with <i class="glyphicon glyphicon-heart"></i> in Melbourne, AUS</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-right">Some imageries are sourced from the awesome image site, <a href="http://www.freepik.com/" target="_blank">Freepik</a></p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <p class="text-right">Some imageries are sourced from the awesome image site, <a href="http://www.freepik.com/" target="_blank">Freepik</a></p>
-            </div>
-        </footer>
+        </div>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery.form.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
