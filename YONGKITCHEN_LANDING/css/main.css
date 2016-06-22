@@ -362,6 +362,9 @@ a {
     width: 100%;
     text-align: left;
 }
+.menu_list p span {
+    vertical-align: top;
+}
 .menu_name {
     width: 250px;
     display: inline-block;
@@ -370,6 +373,7 @@ a {
     font-style: italic;
     font-size: 16px;
     display: inline-block;
+    width: 450px;
 }
 .price {
     font-family: "pill_bold", sans-serif;
@@ -478,6 +482,12 @@ a {
         width: 100%;
         margin: 0 auto;
     }
+
+    .header_cta, .header_cta:hover, .header_cta:focus {
+        position: fixed;
+        top: 200px;
+        right: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -495,7 +505,8 @@ a {
         font-size: 20px;
         line-height: 38px;
     }
-    .menu_description {
+    .menu_description,
+    .header_cta, .header_cta:hover, .header_cta:focus {
         display: none;
     }
 }

@@ -57,157 +57,147 @@
                     <h3>
                         This Week's Menu
                     </h3>
-                    <!-- <div class="menu_animation">
+                    <div class="menu_animation">
                         <img src="./img/icon_burgers.png" id="burger" />
                         <img src="./img/icon_drinks.png" id="drink" />
-                    </div> -->
+                    </div>
                     <div class="menu_list">
                         <h5>Sushi</h5>
                         <p>
                             <span class="menu_name">Crispy Chicken Sushi</span>
-                            <span class="menu_description">Crispy Chicken, mayo, and cucumber wrapped in rice and seaweed</span>
+                            <span class="menu_description">Crispy Chicken and lettuce wrapped in rice and seaweed</span>
                             <span class="price">$5.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Tuna Sushi</span>
-                            <span class="menu_description">Shredded tuna, mayo, and avocado wrapped in rice and seaweed</span>
+                            <span class="menu_description">Shredded tuna and mayo wrapped in rice and seaweed</span>
                             <span class="price">$5.5</span>
                         </p>
 
                         <h5>Salads</h5>
                         <p>
                             <span class="menu_name">Pumpkin Pasta Salad</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Fusili pasta mixed with roasted pumpkin sauce and vegetables</span>
                             <span class="price">$7</span>
                         </p>
 
                         <h5>Dumplings</h5>
                         <p>
                             <span class="menu_name">Pork Dumpling</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Pork and cabbage steamed dumplings served with soy sauce</span>
+                            <span class="price">$7.5</span>
+                        </p>
+                        <p>
+                            <span class="menu_name">Vegetable Dumpling</span>
+                            <span class="menu_description">Tofu and vegetable steamed dumplings served with soy sauce</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Wraps</h5>
                         <p>
                             <span class="menu_name">Chicken Kebab</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Lebanese bread with grilled chicken, tzatziki, onion, lettuce, and tomato</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Spring Rolls</h5>
                         <p>
                             <span class="menu_name">Vegetable Spring Roll</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Crispy spring rolls filled with vegetable and glass noodle</span>
                             <span class="price">$5</span>
                         </p>
                         <p>
                             <span class="menu_name">Chicken Spring Roll</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Crispy spring rolls filled with chicken, vegetable and glass noodle</span>
                             <span class="price">$5</span>
                         </p>
 
                         <h5>Burgers</h5>
                         <p>
                             <span class="menu_name">Chicken Burger</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Chicken snitzel in a bun with lettuce, tomato, capsicum and mayo</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Lamb Burger</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Home made lamb patty in a bun with grilled capsicum, pickles, lettuce, tomato and mayo</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Pies</h5>
                         <p>
                             <span class="menu_name">Chicken Pot Pie</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Creamy chicken stew hidden inside a dome of puff pastry</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Noodles</h5>
                         <p>
                             <span class="menu_name">Korean Glass Noodle (Jap Chae)</span>
-                            <span class="menu_description"></span>
-                            <span class="price">$7.5</span>
-                        </p>
-                        <p>
-                            <span class="menu_name">Spicy Noodle</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Stir-fried vegetable and minced beef with wheat noodle, seasoned with korean style sweet sauce</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Asian Dishes</h5>
                         <p>
                             <span class="menu_name">Thai Fried Rice</span>
-                            <span class="menu_description"></span>
-                            <span class="price">$7.5</span>
-                        </p>
-                        <p>
-                            <span class="menu_name">Kimchi Fried Rice</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Thai style chicken fried rice with vegetables</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Teriyaki Chicken</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Teriyaki chicken with stir-frief vegetable on rice</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Sweet Chilli Chicken</span>
-                            <span class="menu_description"></span>
-                            <span class="price">$7.5</span>
-                        </p>
-                        <p>
-                            <span class="menu_name">Beef Bulgogi</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Deep fried crispy chicken with sweet chilli sauce on rice</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Chicken Curry</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Spicy chicken curry with vegetables on rice</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Pastas</h5>
                         <p>
                             <span class="menu_name">Vegetable Pasta</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Fusilli pasta served with creamy napoli sauce, roasted zucchini and capsicum</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Pulled Lamb Pasta</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Pulled lamb shoulder bathed in jus served with fettuccine pasta</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Creamy Chicken Pesto Pasta</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Fusilli and Penne pasta served with shredded chicken breast and creamy pesto sauce</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Lasagna</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Bolognese sauce in between pasta layers topped with bechamel sauce</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Grills</h5>
                         <p>
                             <span class="menu_name">Grilled Chicken with vegetables</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Grilled chicken on baked vegetables</span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Baked Vegetables</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Roasted potato, capsicum, carrot, zucchini, cauliflower, and brocolli</span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Specials</h5>
                         <p>
                             <span class="menu_name">Korean Mixed Rice (Bibimbap)</span>
-                            <span class="menu_description"></span>
+                            <span class="menu_description">Rice mixed with stir-fried vegetables and minced beef, topped with korean spicy sauce</span>
                             <span class="price">$7.5</span>
                         </p>
                     </div>
