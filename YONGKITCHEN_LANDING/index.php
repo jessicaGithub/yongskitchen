@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-            <div class="row content_area">
+            <div class="row content_area" id="our_service">
                  <div class="col-md-12 col-lg-10 col-lg-offset-1">
                     <h3>
                         Our Service
@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="row new_section">
+            <div class="row new_section" id="this_week_menu">
                  <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                     <h3>
                         This Week's Menu
@@ -77,19 +77,25 @@
                         <h5>Salads</h5>
                         <p>
                             <span class="menu_name">Pumpkin Pasta Salad</span>
-                            <span class="menu_description">Fusili pasta mixed with roasted pumpkin sauce and vegetables</span>
+                            <span class="menu_description">Fusili pasta mixed with roasted pumpkin sauce and vegetables
+                                <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
+                            </span>
                             <span class="price">$7</span>
                         </p>
 
                         <h5>Dumplings</h5>
                         <p>
                             <span class="menu_name">Pork Dumpling</span>
-                            <span class="menu_description">Pork and cabbage steamed dumplings served with soy sauce</span>
+                            <span class="menu_description">Pork and cabbage steamed dumplings served with soy sauce
+                                <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Vegetable Dumpling</span>
-                            <span class="menu_description">Tofu and vegetable steamed dumplings served with soy sauce</span>
+                            <span class="menu_description">Tofu and vegetable steamed dumplings served with soy sauce
+                                <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
 
@@ -103,7 +109,9 @@
                         <h5>Spring Rolls</h5>
                         <p>
                             <span class="menu_name">Vegetable Spring Roll</span>
-                            <span class="menu_description">Crispy spring rolls filled with vegetable and glass noodle</span>
+                            <span class="menu_description">Crispy spring rolls filled with vegetable and glass noodle
+                                <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
+                            </span>
                             <span class="price">$5</span>
                         </p>
                         <p>
@@ -120,21 +128,28 @@
                         </p>
                         <p>
                             <span class="menu_name">Lamb Burger</span>
-                            <span class="menu_description">Home made lamb patty in a bun with grilled capsicum, pickles, lettuce, tomato and mayo</span>
+                            <span class="menu_description">Home made lamb patty in a bun with grilled capsicum, pickles, lettuce, tomato and mayo
+                                <i class="glyphicon glyphicon-thumbs-up" data-toggle="tooltip" data-placement="right" title="recommended"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Pies</h5>
                         <p>
                             <span class="menu_name">Chicken Pot Pie</span>
-                            <span class="menu_description">Creamy chicken stew hidden inside a dome of puff pastry</span>
+                            <span class="menu_description">Creamy chicken stew hidden inside a dome of puff pastry
+                                <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
+                                <i class="glyphicon glyphicon-thumbs-up" data-toggle="tooltip" data-placement="right" title="recommended"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Noodles</h5>
                         <p>
                             <span class="menu_name">Korean Glass Noodle (Jap Chae)</span>
-                            <span class="menu_description">Stir-fried vegetable and minced beef with wheat noodle, seasoned with korean style sweet sauce</span>
+                            <span class="menu_description">Stir-fried vegetable and minced beef with wheat noodle, seasoned with korean style sweet sauce
+                                <i class="glyphicon glyphicon-leaf optional" data-toggle="tooltip" data-placement="right" title="vegetarian (opt)"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
 
@@ -151,7 +166,9 @@
                         </p>
                         <p>
                             <span class="menu_name">Sweet Chilli Chicken</span>
-                            <span class="menu_description">Deep fried crispy chicken with sweet chilli sauce on rice</span>
+                            <span class="menu_description">Deep fried crispy chicken with sweet chilli sauce on rice
+                                <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
@@ -163,17 +180,23 @@
                         <h5>Pastas</h5>
                         <p>
                             <span class="menu_name">Vegetable Pasta</span>
-                            <span class="menu_description">Fusilli pasta served with creamy napoli sauce, roasted zucchini and capsicum</span>
+                            <span class="menu_description">Fusilli pasta served with creamy napoli sauce, roasted zucchini and capsicum
+                                <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Pulled Lamb Pasta</span>
-                            <span class="menu_description">Pulled lamb shoulder bathed in jus served with fettuccine pasta</span>
+                            <span class="menu_description">Pulled lamb shoulder bathed in jus served with fettuccine pasta
+                                <i class="glyphicon glyphicon-thumbs-up" data-toggle="tooltip" data-placement="right" title="recommended"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
                             <span class="menu_name">Creamy Chicken Pesto Pasta</span>
-                            <span class="menu_description">Fusilli and Penne pasta served with shredded chicken breast and creamy pesto sauce</span>
+                            <span class="menu_description">Fusilli and Penne pasta served with shredded chicken breast and creamy pesto sauce
+                                 <i class="glyphicon glyphicon-asterisk" data-toggle="tooltip" data-placement="right" title="new"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
                         <p>
@@ -190,21 +213,35 @@
                         </p>
                         <p>
                             <span class="menu_name">Baked Vegetables</span>
-                            <span class="menu_description">Roasted potato, capsicum, carrot, zucchini, cauliflower, and brocolli</span>
+                            <span class="menu_description">Roasted potato, capsicum, carrot, zucchini, cauliflower, and brocolli
+                                <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
 
                         <h5>Specials</h5>
                         <p>
                             <span class="menu_name">Korean Mixed Rice (Bibimbap)</span>
-                            <span class="menu_description">Rice mixed with stir-fried vegetables and minced beef, topped with korean spicy sauce</span>
+                            <span class="menu_description">Rice mixed with stir-fried vegetables and minced beef, topped with korean spicy sauce
+                                <i class="glyphicon glyphicon-leaf optional" data-toggle="tooltip" data-placement="right" title="vegetarian (opt)"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
+                        <br/>
+                        <br/>
+                        <ul class="disclaimer">
+                            <li>     
+                                <p>Menu and price are correct as of 23 June 2016. We try our best to make sure the website is up to date, but some menu item might change without immediate notice.</p>
+                            </li>
+                            <li>     
+                                <p><i class="glyphicon glyphicon-leaf optional" style="margin-left: 0; margin-right: 5px;"></i>Optional vegetarian options are by order only. Please place your order through one of our staff at least a day before.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="row new_section">
+            <div class="row new_section" id="our_mission">
                  <div class="col-md-8 col-md-offset-2">
                     <h3>
                         Our Mission
@@ -223,12 +260,12 @@
                         We will bring healthy, freshly cooked meals straight to your desk, with a wide variation of menu to choose from every day. We can come in for breakfast and lunch. 
                     </p> 
                     <p>
-                        Please <a href="#contactus">contact us</a> for more info about our service.
+                        Please <a href="#contact_us">contact us</a> for more info about our service.
                     </p>
                 </div>
             </div>
 
-            <div class="row new_section">
+            <div class="row new_section" id="about_us">
                  <div class="col-md-8 col-md-offset-2">
                     <h3>
                         About Us
@@ -254,7 +291,7 @@
                 </div>
             </div>
 
-            <div class="row new_section" id="contactus">
+            <div class="row new_section" id="contact_us">
                 <div class="col-md-8 col-md-offset-2">
                     <h3>Contact Us</h3>
 
@@ -266,13 +303,13 @@
                         <form role="form" id="contact-form" class="contact-form" >
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p class="text-left">Your Name</p>
+                                    <p class="text-left ie9-only">Your Name</p>
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="Name" autocomplete="off" id="Your Name" placeholder="Name">
                                 </div>
                             </div>
                                 <div class="col-md-6">
-                                    <p class="text-left">Your Email</p>
+                                    <p class="text-left ie9-only">Your Email</p>
                                 <div class="form-group">
                                     <input type="email" class="form-control" name="Email" autocomplete="off" id="Your Email" placeholder="E-mail">
                                 </div>
@@ -280,7 +317,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p class="text-left">Your Enquiry</p>
+                                    <p class="text-left ie9-only">Your Enquiry</p>
                                 <div class="form-group">
                                     <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Your Enquiry (250 characters max)" maxlength="250"></textarea>
                                 </div>

@@ -48,6 +48,12 @@ $(document).ready(function(){
             $('html, body').animate({
               scrollTop: target.offset().top + 50
             }, 1000);
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'button_press',
+              eventAction: this.hash.slice(1) + 'button',
+              eventLabel: this.hash.slice(1) + 'button'
+            });
             return false;
           }
         }
@@ -100,10 +106,6 @@ $(document).ready(function(){
         var $form = $(e.target);
         // Get the BootstrapValidator instance
         var bv = $form.data('bootstrapValidator');
-        // Use Ajax to submit form data
-  //       $.post( "thanks-for-contact.php", function( data ) {
-		// 	console.log(data);
-		// });
 
         // prepare Options Object 
         var options = { 
@@ -114,5 +116,24 @@ $(document).ready(function(){
             } 
         }; 
         $form.ajaxSubmit(options);
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'contact_form_sent',
+          eventAction: 'contact_form_sent',
+          eventLabel: 'contact_form_sent'
+        });
     });
+
+    $('#myScrollspy').on('activate.bs.scrollspy', function () {
+        var currentSection = $(this).find("li.active > a").html();
+        // console.log(currentSection);
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'scrollspy',
+          eventAction: 'section_viewed',
+          eventLabel: currentSection
+        });
+    })
+
+    $('[data-toggle="tooltip"]').tooltip();
 });

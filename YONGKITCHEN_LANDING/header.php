@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -24,12 +25,22 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <a href="#contactus" class="header_cta contact">Contact Us</a>
+        <div id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-offset-top="120" data-spy="affix">
+                <li class="active"><a href="#our_service">our service</a></li>
+                <li><a href="#this_week_menu">this week menu</a></li>
+                <li><a href="#our_mission">our mission</a></li>
+                <li><a href="#about_us">about us</a></li>
+                <li><a href="#contact_us">contact us</a></li>
+            </ul>
+        </div>
+
+        <a href="#contact_us" class="header_cta contact">Contact Us</a>
 
         <div class="container-fluid">
             <div class="row header">
