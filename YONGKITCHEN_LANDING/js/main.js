@@ -41,21 +41,30 @@ $(document).ready(function(){
 
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top + 50
-            }, 1000);
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'button_press',
-              eventAction: this.hash.slice(1) + 'button',
-              eventLabel: this.hash.slice(1) + 'button'
-            });
-            return false;
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname ) {
+            // console.log(this.hash);
+            var hashname = this.hash.toString();
+            // console.log(hashname);
+
+          if(hashname.toLowerCase().indexOf("#collapse") >= 0) {
+            // console.log("in");
+        } else {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top + 50
+                }, 1000);
+                ga('send', {
+                  hitType: 'event',
+                  eventCategory: 'button_press',
+                  eventAction: this.hash.slice(1) + 'button',
+                  eventLabel: this.hash.slice(1) + 'button'
+                });
+                return false;
+              }
           }
+          
         }
       });
     });
@@ -136,4 +145,5 @@ $(document).ready(function(){
     })
 
     $('[data-toggle="tooltip"]').tooltip();
+
 });

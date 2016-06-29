@@ -470,7 +470,43 @@ html.lt-ie9 .ie9-only {
     font-size: 14px;
     margin: 0 ;
 }
-
+.panel,
+.panel-default>.panel-heading {
+    background: transparent;
+    border: 0;
+    position: relative;
+}
+.panel-default {
+    box-shadow: none;
+    border-bottom: 2px dashed #213b5a;
+}
+.panel-title a {
+    display: block;
+    padding-right: 50px;
+    text-decoration: none;
+}
+.panel-title a h5 {
+    margin-top: 10px;
+}
+.panel-title a .glyphicon {
+    vertical-align: top;
+}
+.panel-heading > .panel-title > a:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e113";    /* adjust as needed, taken from bootstrap.css */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -8px;
+}
+.panel-heading > .panel-title > a.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 0;
+}
 
 /* ==========================================================================
    Media Queries
