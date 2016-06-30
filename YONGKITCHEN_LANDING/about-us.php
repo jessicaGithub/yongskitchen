@@ -1,7 +1,7 @@
 <div class="row new_section" id="about_us">
                  <div class="col-md-8 col-md-offset-2">
                     <h3>
-                        About Us
+                        About Yong's Kitchen
                     </h3>
                     <div class="profile_photo">
                         <img src="./img/jooyong.png" id="jooyong" />

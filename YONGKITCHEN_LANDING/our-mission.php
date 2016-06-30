@@ -11,10 +11,10 @@
                         We understand that in the modern workforce, often employees do not have enough time to get a proper meal. 
                     </p>
                     <p>
-                        This is where we come to the rescue, by providing a mobile catering service. 
+                        This is where Yong's Kitchen come to the rescue, by providing a mobile catering service. 
                     </p> 
                     <p>
-                        We will bring healthy, freshly cooked meals straight to your desk, with a wide variation of menu to choose from every day. We can come in for breakfast and lunch. 
+                        Yong's Kitchen will bring healthy, freshly cooked meals straight to your desk, with a wide variation of menu to choose from every day. We can come in for breakfast and lunch. 
                     </p> 
                     <p>
                         Please <a href="#contact_us">contact us</a> for more info about our service.

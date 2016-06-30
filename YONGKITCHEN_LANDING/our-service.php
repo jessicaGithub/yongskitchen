@@ -5,7 +5,7 @@
                     </h3>
                     <div class="row">
                         <div class="col-md-4 col-lg-3">
-                            <p>We cook the food each morning..</p>
+                            <p>At Yong's Kitchen's, we cook the food each morning..</p>
                             <div class="service_step step_1">
                                 <img src="./img/step_1_hand.png" id="step_1_hand" />
                                 <img src="./img/step_1_body.png" id="step_1_body" />
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
-                            <p>Drive it to your company..</p>
+                            <p>Drive it to your company on Yong's Kitchen's beloved van..</p>
                             <div class="service_step step_3 truck_animation">
                                 <img src="./img/step_3_truck.png" id="truck_2" />
                                 <img src="./img/step_3_fume.png" id="fume_2" />

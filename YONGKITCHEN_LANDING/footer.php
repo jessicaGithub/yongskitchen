@@ -30,6 +30,46 @@
 
         </script>
          
+         <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Restaurant",
+            "image": "http://yongskitchen.com.au/tile-wide.png",
+            "@id": "http://yongskitchen.com.au",
+            "name": "Yong's Kitchen",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "47 Boundary Road",
+              "addressLocality": "North Melbourne",
+              "addressRegion": "VIC",
+              "postalCode": "3052",
+              "addressCountry": "AUS"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -37.7942060,
+              "longitude": 144.9388880
+            },
+            "url": "http://yongskitchen.com.au",
+            "telephone": "+61401370107",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "17:00"
+              }
+            ],
+            "menu": "http://yongskitchen.com.au",
+            "acceptsReservations": "False"
+          }
+          </script>
 
          <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5769cc565f6a547a"></script>

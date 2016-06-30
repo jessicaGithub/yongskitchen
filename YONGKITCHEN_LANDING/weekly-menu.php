@@ -321,16 +321,6 @@
                             </span>
                             <span class="price">$7.5</span>
                         </p>
-
-                        <h5>Noodles</h5>
-                        <p>
-                            <span class="menu_name">Korean Glass Noodle (Jap Chae)</span>
-                            <span class="menu_description">Stir-fried vegetable and minced beef with wheat noodle, seasoned with korean style sweet sauce
-                                <i class="glyphicon glyphicon-leaf optional" data-toggle="tooltip" data-placement="right" title="vegetarian (opt)"></i>
-                            </span>
-                            <span class="price">$7.5</span>
-                        </p>
-
                         </div>
                         </div>
                       </div>
@@ -365,6 +355,14 @@
                         <p>
                             <span class="menu_name">Chicken Curry</span>
                             <span class="menu_description">Spicy chicken curry with vegetables on rice</span>
+                            <span class="price">$7.5</span>
+                        </p>
+                        
+                        <p>
+                            <span class="menu_name">Korean Glass Noodle (Jap Chae)</span>
+                            <span class="menu_description">Stir-fried vegetable and minced beef with wheat noodle, seasoned with korean style sweet sauce
+                                <i class="glyphicon glyphicon-leaf optional" data-toggle="tooltip" data-placement="right" title="vegetarian (opt)"></i>
+                            </span>
                             <span class="price">$7.5</span>
                         </p>
                         </div>

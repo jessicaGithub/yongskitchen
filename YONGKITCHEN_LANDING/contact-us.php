@@ -2,7 +2,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h3>Contact Us</h3>
 
-                    <p>Interested in having us over at your company? Or just curious? We welcome all enquiries.</p>
+                    <p>Interested in having Yong's Kitchen over at your company? Or just curious? We welcome all enquiries.</p>
 
                     <p>Please fill in the form below:</p>
 
