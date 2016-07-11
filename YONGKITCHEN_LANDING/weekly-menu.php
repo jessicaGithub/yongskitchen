@@ -210,13 +210,6 @@
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                           <div class="panel-body">
                             <p>
-                                <span class="menu_name">Pumpkin Pasta Salad</span>
-                                <span class="menu_description">Fusili pasta mixed with roasted pumpkin sauce and vegetables
-                                    <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
-                                </span>
-                                <span class="price">$7</span>
-                            </p>
-                            <p>
                                 <span class="menu_name">Chicken Kebab</span>
                                 <span class="menu_description">Lebanese bread with grilled chicken, tzatziki, onion, lettuce, and tomato</span>
                                 <span class="price">$7.5</span>
@@ -357,14 +350,6 @@
                             <span class="menu_description">Spicy chicken curry with vegetables on rice</span>
                             <span class="price">$7.5</span>
                         </p>
-                        
-                        <p>
-                            <span class="menu_name">Korean Glass Noodle (Jap Chae)</span>
-                            <span class="menu_description">Stir-fried vegetable and minced beef with wheat noodle, seasoned with korean style sweet sauce
-                                <i class="glyphicon glyphicon-leaf optional" data-toggle="tooltip" data-placement="right" title="vegetarian (opt)"></i>
-                            </span>
-                            <span class="price">$7.5</span>
-                        </p>
                         </div>
                         </div>
                       </div>
@@ -394,9 +379,8 @@
                             <span class="price">$7.5</span>
                         </p>
                         <p>
-                            <span class="menu_name">Creamy Chicken Pesto Pasta</span>
-                            <span class="menu_description">Fusilli and Penne pasta served with shredded chicken breast and creamy pesto sauce
-                                 <i class="glyphicon glyphicon-asterisk" data-toggle="tooltip" data-placement="right" title="new"></i>
+                            <span class="menu_name">Creamy Carbonara Pasta</span>
+                            <span class="menu_description">Fusilli and Penne pasta served with bacon, mushroom and carbonara sauce
                             </span>
                             <span class="price">$7.5</span>
                         </p>
@@ -447,11 +431,19 @@
                         <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
                           <div class="panel-body">
                             <p>
-                            <span class="menu_name">Korean Mixed Rice (Bibimbap)</span>
-                            <span class="menu_description">Rice mixed with stir-fried vegetables and minced beef, topped with korean spicy sauce
-                                <i class="glyphicon glyphicon-leaf optional" data-toggle="tooltip" data-placement="right" title="vegetarian (opt)"></i>
-                            </span>
+                            <span class="menu_name">Asian Chicken Noodle Soup</span>
+                            <span class="menu_description">Hearty soy based soup served with tenderly boiled chicken and vegetables with 2 kinds of noodles
+                                <i class="glyphicon glyphicon-asterisk" data-toggle="tooltip" data-placement="right" title="new"></i>
+                             </span>
                             <span class="price">$7.5</span>
+                            </p>
+                            <p>
+                            <span class="menu_name">Dorma</span>
+                            <span class="menu_description">Two baked tomatoes filled with vegetable pilaf topped with mozarella cheese                                
+                                 <i class="glyphicon glyphicon-asterisk" data-toggle="tooltip" data-placement="right" title="new"></i>
+                                 <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
+                            </span>
+                            <span class="price">$7</span>
                         </p>
                         </div>
                         </div>
@@ -459,7 +451,7 @@
                     </div>
                     <ul class="disclaimer menu_list">
                         <li>     
-                            <p>Menu and price are correct as of 27 June 2016. We try our best to make sure the website is up to date, but some menu item might change without immediate notice.</p>
+                            <p>Menu and price are correct as of 5 July 2016. We try our best to make sure the website is up to date, but some menu item might change without immediate notice.</p>
                         </li>
                         <li>     
                             <p><i class="glyphicon glyphicon-leaf optional" style="margin-left: 0; margin-right: 5px;"></i>Optional vegetarian options are by order only. Please place your order through one of our staff at least a day before.</p>
