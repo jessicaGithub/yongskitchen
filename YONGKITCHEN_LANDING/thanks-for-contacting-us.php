@@ -43,8 +43,10 @@ $mail->setFrom($email, $name);
 $mail->addReplyTo($email, $name);
 //Set who the message is to be sent to
 $mail->addAddress('enquiries@yongskitchen.com.au', 'Jooyong Jeong');
+$mail->AddCC('himechi90@gmail.com', 'Jessica Jeong');
+$mail->AddCC('jooyong1985@gmail.com', 'Jooyong Jeong');
 //Set the subject line
-$mail->Subject = $msg;
+$mail->Subject = "Yong's Kitchen Website Enquiry";
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 $mail->msgHTML($msg);

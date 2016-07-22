@@ -138,9 +138,10 @@ h3 {
 
 h4 {
     font-family: "pill_regular", sans-serif;
-    color: #FDEEDA;
+    color: #213b5a;
     font-size: 26px;
     text-transform: capitalize;
+    margin-bottom: 20px;
 }
 
 h5 {
@@ -223,6 +224,11 @@ html.lt-ie9 .ie9-only {
     -moz-opacity: 1;
     -khtml-opacity: 1;
     opacity: 1;    
+}
+
+#heading_secondary {
+    color: #FDEEDA;
+    margin-bottom: 0;
 }
 
 .tag {

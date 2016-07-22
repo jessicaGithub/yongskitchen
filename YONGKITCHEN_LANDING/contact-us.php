@@ -2,12 +2,16 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h3>Contact Us</h3>
 
-                    <p>Interested in having Yong's Kitchen over at your company? Or just curious? We welcome all enquiries.</p>
-
-                    <p>Please fill in the form below:</p>
-
                     <div id="contact_form">
                         <form role="form" id="contact-form" class="contact-form" >
+                            <div class="row">
+
+                                <p>Interested in having Yong's Kitchen over at your company? Or just curious? We welcome all enquiries.</p>
+
+                                <p>Please fill in the form below:</p>
+                                <br/><br/>
+
+                            </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="text-left ie9-only">Your Name</p>
