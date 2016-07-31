@@ -187,13 +187,8 @@
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                           <div class="panel-body">
                             <p>
-                                    <span class="menu_name">Crispy Chicken Sushi</span>
-                                    <span class="menu_description">Crispy Chicken and lettuce wrapped in rice and seaweed</span>
-                                    <span class="price">$5.5</span>
-                                </p>
-                                <p>
-                                    <span class="menu_name">Tuna Sushi</span>
-                                    <span class="menu_description">Shredded tuna and mayo wrapped in rice and seaweed</span>
+                                    <span class="menu_name">Chicken Avocado Sushi</span>
+                                    <span class="menu_description">Crispy Chicken and avocado wrapped in rice and seaweed</span>
                                     <span class="price">$5.5</span>
                                 </p>
                             </div>
@@ -210,18 +205,21 @@
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                           <div class="panel-body">
                             <p>
-                                <span class="menu_name">Quesadilla</span>
+                                <span class="menu_name">Beef Quesadilla</span>
                                 <span class="menu_description">
                                     Beef brisket, melted cheese and caramelised onion between tortilla wraps served with home made salsa
                                     <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
                                     <i class="glyphicon glyphicon-thumbs-up" data-toggle="tooltip" data-placement="right" title="recommended"></i>
                                 </span>
-                                <span class="price">$8.5</span>
+                                <span class="price">$8</span>
                             </p>
                             <p>
-                                <span class="menu_name">Pumpkin and Quinoa Salad</span>
-                                <span class="menu_description">Kale, roasted sweet pumpkin, and quinoa served with lemony olive oil dressings</span>
-                                <span class="price">$7</span>
+                                <span class="menu_name">Tabouli</span>
+                                <span class="menu_description">
+                                    Couscous salad served with herbs, vegetables and dried fruits                                                                  
+                                 <i class="glyphicon glyphicon-asterisk" data-toggle="tooltip" data-placement="right" title="new"></i>
+                                </span>
+                                <span class="price">$8</span>
                             </p>
                             </div>
                         </div>
@@ -242,14 +240,14 @@
                                 <span class="menu_description">Pork and cabbage steamed dumplings served with soy sauce
                                     <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
                                 </span>
-                                <span class="price">$8.5</span>
+                                <span class="price">$8</span>
                             </p>
                             <p>
                                 <span class="menu_name">Vegetable Dumpling</span>
                                 <span class="menu_description">Tofu and vegetable steamed dumplings served with soy sauce
                                     <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
                                 </span>
-                                <span class="price">$8.5</span>
+                                <span class="price">$8</span>
                             </p>
                         </div>
                         </div>
@@ -321,14 +319,14 @@
                                 <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
                                 <i class="glyphicon glyphicon-thumbs-up" data-toggle="tooltip" data-placement="right" title="recommended"></i>
                             </span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                             </p>
                             <p>
                             <span class="menu_name">Shepperd's Pie</span>
                             <span class="menu_description">Hearty beef stew served with cheesy mashed potato
                                 <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
                             </span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         </div>
                         </div>
@@ -347,29 +345,29 @@
                             <p>
                             <span class="menu_name">Thai Fried Rice</span>
                             <span class="menu_description">Thai style chicken fried rice with vegetables</span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Teriyaki Chicken</span>
                             <span class="menu_description">Teriyaki chicken with stir-frief vegetable on rice</span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Sweet Chilli Chicken</span>
                             <span class="menu_description">Deep fried crispy chicken with sweet chilli sauce on rice
                                 <i class="glyphicon glyphicon-heart" data-toggle="tooltip" data-placement="right" title="best seller"></i>
                             </span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Chicken Curry</span>
                             <span class="menu_description">Spicy chicken curry with vegetables on rice</span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
-                            <span class="menu_name">Chicken Cashew Stirfry</span>
-                            <span class="menu_description">Soy based chicken thigh pieces with cashew on rice</span>
-                            <span class="price">$8.5</span>
+                            <span class="menu_name">Kimchi Fried Rice</span>
+                            <span class="menu_description">Fried rice with deep flavour of kimchi, vegetables and chicken</span>
+                            <span class="price">$8</span>
                         </p>
                         </div>
                         </div>
@@ -390,25 +388,25 @@
                             <span class="menu_description">Fusilli pasta served with creamy napoli sauce, roasted zucchini and capsicum
                                 <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
                             </span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Pulled Lamb Pasta</span>
                             <span class="menu_description">Pulled lamb shoulder bathed in jus served with fettuccine pasta
                                 <i class="glyphicon glyphicon-thumbs-up" data-toggle="tooltip" data-placement="right" title="recommended"></i>
                             </span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Creamy Carbonara Pasta</span>
                             <span class="menu_description">Fusilli and Penne pasta served with bacon, mushroom and carbonara sauce
                             </span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Lasagna</span>
                             <span class="menu_description">Bolognese sauce in between pasta layers topped with bechamel sauce</span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
 
                         </div>
@@ -428,7 +426,7 @@
                             <p>
                             <span class="menu_name">Grilled Chicken with vegetables</span>
                             <span class="menu_description">Grilled chicken on baked vegetables</span>
-                            <span class="price">$8.5</span>
+                            <span class="price">$8</span>
                         </p>
                         <p>
                             <span class="menu_name">Baked Vegetables</span>
@@ -440,7 +438,7 @@
                         </div>
                         </div>
                       </div>
-                    <!--<div class="panel panel-default">
+                    <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingTwelve">
                           <h4 class="panel-title">
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
@@ -453,20 +451,19 @@
                           <div class="panel-body">
                             
                              <p>
-                            <span class="menu_name">Dorma</span>
-                            <span class="menu_description">Two baked tomatoes filled with vegetable pilaf topped with mozarella cheese                                
+                            <span class="menu_name">Braised pork belly</span>
+                            <span class="menu_description">Tender pork belly braised in soy sauce served on rice with pickled vegetables                           
                                  <i class="glyphicon glyphicon-asterisk" data-toggle="tooltip" data-placement="right" title="new"></i>
-                                 <i class="glyphicon glyphicon-leaf" data-toggle="tooltip" data-placement="right" title="vegetarian"></i>
                             </span>
-                            <span class="price">$7</span>
+                            <span class="price">$8.5</span>
                         </p> 
                         </div>
                         </div>
-                      </div>-->
+                      </div>
                     </div>
                     <ul class="disclaimer menu_list">
                         <li>     
-                            <p>Menu and price are correct as of 18 July 2016. We try our best to make sure the website is up to date, but some menu item might change without immediate notice.</p>
+                            <p>Menu and price are correct as of 01 August 2016. We try our best to make sure the website is up to date, but some menu item might change without immediate notice.</p>
                         </li>
                         <li>     
                             <p><i class="glyphicon glyphicon-leaf optional" style="margin-left: 0; margin-right: 5px;"></i>Optional vegetarian options are by order only. Please place your order through one of our staff at least a day before.</p>
