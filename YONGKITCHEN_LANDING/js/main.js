@@ -146,4 +146,61 @@ $(document).ready(function(){
 
     $('[data-toggle="tooltip"]').tooltip();
 
+    var days = [
+        'sun', //sunday starts at 0
+        'mon',
+        'tue',
+        'wed',
+        'thu',
+        'fri',
+        'sat'
+    ];
+
+    d = new Date(); 
+    x = d.getDay(); //This returns a number, starting with 0 for Sunday
+
+    currentFilter = days[x];
+
+    $(".filter_button").on('click',function(){
+        var filterVal = $(this).attr('id');
+        console.log(filterVal);
+        switch(filterVal){
+            case 'mon': 
+                $(".filter_button").removeClass("active");
+                $("#mon").addClass("active");
+                $(".all").hide();
+                $(".mon").show();
+                break;
+            case 'tue': 
+                $(".filter_button").removeClass("active");
+                $("#tue").addClass("active");
+                $(".all").hide();
+                $(".tue").show();
+                break;
+            case 'wed': 
+                $(".filter_button").removeClass("active");
+                $("#wed").addClass("active");
+                $(".all").hide();
+                $(".wed").show();
+                break;
+            case 'thu': 
+                $(".filter_button").removeClass("active");
+                $("#thu").addClass("active");
+                $(".all").hide();
+                $(".thu").show();
+                break;
+            case 'fri': 
+                $(".filter_button").removeClass("active");
+                $("#fri").addClass("active");
+                $(".all").hide();
+                $(".fri").show();
+                break;
+            default:
+                $(".filter_button").removeClass("active");
+                $("#all").addClass("active");
+                $(".all").show().addClass("active");
+                break;
+        }
+    })
+
 });

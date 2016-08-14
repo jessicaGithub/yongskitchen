@@ -387,6 +387,26 @@ html.lt-ie9 .ie9-only {
     margin-top: 66px;
 }
 
+.menu_filter {
+    margin: 0px auto 30px;
+    display: block;
+    clear: both;
+}
+
+.filter_button {
+    text-decoration: none;
+    display: block;
+    width: 16.65%;
+    float: left;
+    cursor: pointer;
+}
+
+.filter_button:hover,
+.filter_button.active {
+    background: #d53925;
+    text-decoration: none;
+}
+
 .menu_list, .menu_list p {
     display: block;
     width: 100%;
@@ -493,6 +513,7 @@ html.lt-ie9 .ie9-only {
 }
 .panel-title a h5 {
     margin-top: 10px;
+    text-align: left;
 }
 .panel-title a .glyphicon {
     vertical-align: top;
